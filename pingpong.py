@@ -17,10 +17,10 @@ class gameobject(sprite.Sprite):
 class player(gameobject):
     def control(self):
         knopki = key.get_pressed()
-        if knopki[K_d] and self.rect.x < 450:
-            self.rect.x += 1
-        if knopki[K_a] and self.rect.x > 0:
-            self.rect.x -= 1    
+        if knopki[K_w] and self.rect.x < 600:
+            self.rect.y -= 1
+        if knopki[K_s] and self.rect.x > 0:
+            self.rect.y += 1    
 while game:
     for i in event.get():
         if i.type == QUIT:
