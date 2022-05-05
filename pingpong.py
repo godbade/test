@@ -17,12 +17,18 @@ class gameobject(sprite.Sprite):
 class player(gameobject):
     def control(self):
         knopki = key.get_pressed()
-        if knopki[K_w] and self.rect.x < 600:
+        if knopki[K_w]
             self.rect.y -= 1
-        if knopki[K_s] and self.rect.x > 0:
+        if knopki[K_s] 
             self.rect.y += 1    
             
-            
+class geroi(gameobject):
+    def control(self):
+        knopki = key.get_pressed()
+        if knopki[K_UP] 
+            self.rect.y -= 1
+        if knopki[K_DOWN] 
+            self.rect.y += 1                
             
 while game:
     for i in event.get():
