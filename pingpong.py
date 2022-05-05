@@ -21,6 +21,9 @@ class player(gameobject):
             self.rect.y -= 1
         if knopki[K_s] and self.rect.x > 0:
             self.rect.y += 1    
+            
+            
+            
 while game:
     for i in event.get():
         if i.type == QUIT:
