@@ -1,4 +1,4 @@
 a=int(input())
 print(a,"1")
-text= text.lower()
-print(text)
+point 1 = input('Егор от 1 до 5 миша)
+                
