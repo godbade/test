@@ -2,6 +2,7 @@ from pygame import*
 okno = display.set_mode((600,600))
 game = True
 clock = time.Clock()
+s=int(input())
 
 class gameobject(sprite.Sprite):
     def __init__(self, img, x,y,q,q1):
@@ -18,21 +19,22 @@ class player(gameobject):
     def control(self):
         knopki = key.get_pressed()
         if knopki[K_w]
-            self.rect.y -= 1
+            self.rect.y -= s
         if knopki[K_s] 
-            self.rect.y += 1    
+            self.rect.y += s    
             
 class geroi(gameobject):
     def control(self):
         knopki = key.get_pressed()
         if knopki[K_UP] 
-            self.rect.y -= 1
+            self.rect.y -= s
         if knopki[K_DOWN] 
-            self.rect.y += 1                
+            self.rect.y += s                
             
 while game:
     for i in event.get():
         if i.type == QUIT:
             game = False
+       
  
     display.update()
