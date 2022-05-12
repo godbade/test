@@ -44,6 +44,7 @@ while game:
             game = False
     okno.fill((0,0,0))
     p1.draw()
+    ball.draw()
     p1.control()
     ball.move(sx,sy)
     if ball.rect.x < 0:
