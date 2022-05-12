@@ -34,6 +34,7 @@ class ball(gameobject):
     def move(self,sx,sy):
         self.rect.x+=sx
         self.rect.y+=sy
+        
 sx=1
 sy=1
 p2=geroi("open.png",590,510,10,90)
@@ -57,6 +58,10 @@ while game:
     if ball.rect.y < 0:
         sy*=-1
     if ball.rect.y > 600:
-        sy*=-1         
+        sy*=-1  
+    if sprite.collide_rect(p1,ball):
+        sx*=-1
+    if sprite.collide_rect(p2,ball):
+        sx*=-1 
     clock.tick(60)
     display.update()
