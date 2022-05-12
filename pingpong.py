@@ -36,7 +36,7 @@ class ball(gameobject):
         self.rect.y+=sy
 sx=1
 sy=1
-p2=geroi("open.png",600,600,10,90)
+p2=geroi("open.png",590,510,10,90)
 p1=player("open.png",0,0,10,90)
 ball=ball("ball.png",300,300,20,20)
 while game:
