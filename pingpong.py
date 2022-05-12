@@ -49,5 +49,12 @@ while game:
     if ball.rect.x < 0:
         sx*=-1
     if ball.rect.x > 600:
-        sx*=-1       
+        sx*=-1  
+     if ball.rect.y < 0:
+        sy*=-1
+    if ball.rect.y > 40:
+        sy*=-1 
+        game = False 
+        
+    clock.tick(60)
     display.update()
