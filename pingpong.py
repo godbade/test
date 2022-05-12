@@ -24,23 +24,19 @@ class player(gameobject):
             self.rect.y += s    
             
 class geroi(gameobject):
-    def control(self):
+    def control2(self):
         knopki = key.get_pressed()
-        if knopki[K_UP]:
+        if knopki[K_UP]: 
             self.rect.y -= s
         if knopki[K_DOWN]: 
             self.rect.y += s                
-
-ball = gameobject("ball.png" , 300,350,60,50)
-dx =  -1
-dy = -1 
-
-
+            
+p1=player("open.png",0,0,10,90)
 while game:
     for i in event.get():
         if i.type == QUIT:
             game = False
- for i in event.get():
-    
- 
+    okno.fill((0,0,0))
+    p1.draw()
+    p1.control()
     display.update()
