@@ -37,7 +37,7 @@ class ball(gameobject):
 sx=1
 sy=1
 p1=player("open.png",0,0,10,90)
-ball=ball(
+ball=ball("ball.png",300,300,20,20)
 while game:
     for i in event.get():
         if i.type == QUIT:
