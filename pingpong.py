@@ -51,7 +51,7 @@ while game:
         sx*=-1
     if ball.rect.x > 600:
         sx*=-1  
-     if ball.rect.y < 0:
+    if ball.rect.y < 0:
         sy*=-1
     if ball.rect.y > 600:
         sy*=-1 
