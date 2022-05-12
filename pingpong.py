@@ -31,12 +31,16 @@ class geroi(gameobject):
         if knopki[K_DOWN]: 
             self.rect.y += s                
 
-ball = gameobject(      
+ball = gameobject("ball.png" , 300,350,60,50)
+dx =  -1
+dy = -1 
+
 
 while game:
     for i in event.get():
         if i.type == QUIT:
             game = False
-       
+ for i in event.get():
+    
  
     display.update()
