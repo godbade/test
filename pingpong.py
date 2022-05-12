@@ -31,6 +31,10 @@ class geroi(gameobject):
         if knopki[K_DOWN] 
             self.rect.y += s                
             
+class gamesprite(sprite.Sprite):
+    def __init__(self, img, shirina,visota):
+        sprite.Sprite.__init__(self)
+        self.image = transform.scale(image.load(img), (shirina,visota))
 while game:
     for i in event.get():
         if i.type == QUIT:
