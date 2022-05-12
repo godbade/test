@@ -40,7 +40,7 @@ while game:
     p1.draw()
     p1.control()
     ball.rect.y += s
-    ball/rect.y -= s
+    ball.rect.y -= s
     if ball.rect.x < 0:
         s *= -1 
     display.update()
