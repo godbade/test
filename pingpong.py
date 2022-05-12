@@ -30,7 +30,8 @@ class geroi(gameobject):
             self.rect.y -= s
         if knopki[K_DOWN]: 
             self.rect.y += s                
-            
+
+ball = gameobject(      
 
 while game:
     for i in event.get():
