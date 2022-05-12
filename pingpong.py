@@ -29,9 +29,15 @@ class geroi(gameobject):
         if knopki[K_UP]: 
             self.rect.y -= s
         if knopki[K_DOWN]: 
-            self.rect.y += s                
-            
+            self.rect.y += s
+class ball(gameobject):
+    def move(self,sx,sy):
+        self.rect.x+=sx
+        self.rect.y+=sy
+sx=1
+sy=1
 p1=player("open.png",0,0,10,90)
+ball=ball(
 while game:
     for i in event.get():
         if i.type == QUIT:
@@ -39,8 +45,9 @@ while game:
     okno.fill((0,0,0))
     p1.draw()
     p1.control()
-    ball.rect.y += s
-    ball.rect.y -= s
+    ball.move(sx,sy)
     if ball.rect.x < 0:
-        s *= -1 
+        sx*=-1
+    if ball.rect.x > 600:
+        sx*=-1       
     display.update()
