@@ -18,23 +18,20 @@ class gameobject(sprite.Sprite):
 class player(gameobject):
     def control(self):
         knopki = key.get_pressed()
-        if knopki[K_w]
+        if knopki[K_w]:
             self.rect.y -= s
-        if knopki[K_s] 
+        if knopki[K_s]:
             self.rect.y += s    
             
 class geroi(gameobject):
     def control(self):
         knopki = key.get_pressed()
-        if knopki[K_UP] 
+        if knopki[K_UP]:
             self.rect.y -= s
-        if knopki[K_DOWN] 
+        if knopki[K_DOWN]: 
             self.rect.y += s                
             
-class gamesprite(sprite.Sprite):
-    def __init__(self, img, shirina,visota):
-        sprite.Sprite.__init__(self)
-        self.image = transform.scale(image.load(img), (shirina,visota))
+
 while game:
     for i in event.get():
         if i.type == QUIT:
