@@ -48,7 +48,7 @@ while game:
     ball.draw()
     p1.control()
     p2.draw()
-    p2.conrol2()
+    p2.control2()
     ball.move(sx,sy)
     if ball.rect.x < 0:
         sx*=-1
